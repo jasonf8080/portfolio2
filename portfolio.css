@@ -75,7 +75,6 @@ section{
 .header{
     height: 90vh;
     width: 100vw;
-    overflow: hidden;
     background: url("https://images.pexels.com/photos/1182825/pexels-photo-1182825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center/cover;
     border: 1px solid black;
     position: relative;
@@ -524,12 +523,13 @@ nav{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: black;
-        color: white;
+        background: white;
+        color: rgb(19, 19, 19);
         height: 90vh;
         width: 60vw;
         z-index: 20;
         transition: 0.5s;
+        box-shadow: 10px 10px 10px 0px rgb(0,0,0,0.5);
     }
 
     .menu li{
@@ -537,7 +537,7 @@ nav{
     }
 
     .menu a{
-        color: white;
+        color: rgb(19, 19, 19);
     }
 
     .menu-icon{
