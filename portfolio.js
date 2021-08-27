@@ -12,11 +12,11 @@ function displayMenu(e){
 
     if(menuIcon.classList.contains('menu-active')){
         menuIcon.innerHTML = '<i class="fas fa-times"></i>';
-        menu.style.right = '0px';
+        menu.style.left = '0px';
 
     } else {
         menuIcon.innerHTML = ' <i class="fas fa-bars"></i>';
-        menu.style.right = '-500px';
+        menu.style.left = '-800px';
     }
 
 
