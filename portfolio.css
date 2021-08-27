@@ -31,6 +31,8 @@ html{
 body{
     position: relative;
     background: white;
+    max-width: 100vw;
+    overflow: hidden;
     
 
 }
@@ -319,6 +321,10 @@ nav{
     cursor: pointer;
 }
 
+.projects-grid img{
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0, 0.3);
+}
+
 .projects-grid a:hover{
     transform: scale(1.06);
 }
@@ -517,7 +523,7 @@ nav{
     .menu{
         position: absolute;
         top: 0;
-        right: -500px;
+        left: -800px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -540,21 +546,17 @@ nav{
     .menu-icon{
         display: inline-block;
         z-index: 21;
+        cursor: pointer;
     }
 
     
 
     .menu-icon i{
         font-size: 30px;
-    }
-
-    .fas .fa-bars{
         color: black;
     }
 
-    .fa-times{
-        color: white;
-    }
+   
 
     .project-info p{
        font-size: 16px;
