@@ -11,12 +11,16 @@ function displayMenu(e){
     menuIcon.classList.toggle('menu-active');
 
     if(menuIcon.classList.contains('menu-active')){
-        menuIcon.innerHTML = '<i class="fas fa-times"></i>';
-        menu.style.left = '0px';
 
-    } else {
         menuIcon.innerHTML = ' <i class="fas fa-bars"></i>';
-        menu.style.left = '-800px';
+        menu.style.height = '70vh';
+        menu.style.padding = '40px 0';
+
+      } else {
+        menuIcon.innerHTML = '<i class="fas fa-times"></i>';
+        menu.style.height = '0px';
+        menu.style.padding = '0px';
+    }
     }
 
 
@@ -24,4 +28,3 @@ function displayMenu(e){
 
        
     
-}
