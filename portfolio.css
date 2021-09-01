@@ -76,8 +76,9 @@ section{
 .header{
     height: 90vh;
     width: 100vw;
-    background: url("https://images.pexels.com/photos/1182825/pexels-photo-1182825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center/cover;
+    /*background: url("https://images.pexels.com/photos/1182825/pexels-photo-1182825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center/cover;*/
     border: 1px solid black;
+    background: black;
     position: relative;
     box-shadow: 0px 3px 5px 0px rgb(0, 0, 0, 0.3);
 }
@@ -158,6 +159,14 @@ nav{
     text-transform: uppercase;
 }
 
+.header-info h1{
+    font-size: 46px;
+}
+
+.header-info p{
+    font-size: 22px;
+}
+
 .header-options{
     display: flex;
     align-items: center;
@@ -175,7 +184,9 @@ nav{
     cursor: pointer;
     text-transform: uppercase;
     transition: 0.5s;
+    font-size: 14px;
 }
+
 
 .header-btn:hover{
     background: rgb(240, 77, 77);
@@ -215,57 +226,6 @@ nav{
     font-size: 22px;
     line-height: 30px;
 }
-
-
-.interests{
-    margin: 0 auto;
-    margin-top: 60px;
-}
-
-
-.interests h4{
-    font-size: 24px;
-    text-align: center;
-    
-}
-
-.interest-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 24px;
-}
-
-.icon-container{
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 105px;
-    width: 105px;
-    margin-right: 15px;
-    background: rgb(240, 77, 77);
-    box-shadow:  0 2px 5px #000;
-    
-}
-
-.icon-container:last-child{
-    margin-right: 0px;
-}
-
-
-.icon-container p{
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: rgb(241, 239, 239);
-}
-
-.icon-container i{
-    font-size: 26px;
-    color: white;
-} 
 
 
 
@@ -515,12 +475,24 @@ nav{
 
 }
 
+.footer{
+    height: 10vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer p{
+    color: white;
+}
 
 
 @media(max-width: 1024px){
-    .header-info{
-        visibility: hidden;
-    }
+
+  
+    
 
     .menu{
         position: absolute;
@@ -622,6 +594,10 @@ nav{
 
 
 @media(max-width: 768px){
+
+    .header{
+        height: 75vh;
+    }
 
     .am-desc{
         font-size: 17px;
