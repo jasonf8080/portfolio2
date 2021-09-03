@@ -171,6 +171,7 @@ nav{
     display: flex;
     align-items: center;
     margin-top: 10px;
+    visibility: hidden;
 }
 
 .header-btn{
@@ -185,6 +186,7 @@ nav{
     text-transform: uppercase;
     transition: 0.5s;
     font-size: 14px;
+    text-align: center;
 }
 
 
@@ -639,6 +641,13 @@ nav{
 
 
 @media(max-width: 590px){
+    .header-info h1{
+        font-size: 24px;
+    }
+
+    .header-info p{
+        font-size: 14px;
+    }
 
 
     .projects-grid{
